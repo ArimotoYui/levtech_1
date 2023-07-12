@@ -14,8 +14,10 @@ class PostController extends Controller
         //dd($test); //確認用に追加
         
         //return view('posts.index')->with(['posts' => $post->getByLimit()]);//$postの中身を戻り値にする。
-        return view('posts.index')->with(['posts' => $post->getPaginateByLimit()]); 
+        //return view('posts.index')->with(['posts' => $post->getPaginateByLimit()]); 
         // getPaginateByLimit()はPost.phpで定義したメソッドです
+        return view('posts.show')->with(['post' => $post]);
+        //'post'はbladeファイルで使う関数、中身は$postはid=1のPostインスタンス
     }
     
 }

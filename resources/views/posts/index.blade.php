@@ -8,6 +8,9 @@
     </head>
     <body>
         <h1>Blog Name</h1>
+        <h2 class='title'>
+            <a href="/posts/{{ $post->id }}">{{ $ post->title }}</a>
+        </h2>
         <div class='posts'>
  
             @foreach ($posts as $post)
