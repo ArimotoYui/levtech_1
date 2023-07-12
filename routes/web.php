@@ -15,6 +15,6 @@ use App\Http\Controllers\PostController;
 */
 
 
-Route::get('/yui',[PostController::class, 'index']);
+Route::get('/',[PostController::class, 'index']);
 //Route::get('/', function () {return view('welcome');});
 //Route::get('/', function() {return view('posts.index');});
