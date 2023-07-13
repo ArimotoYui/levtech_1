@@ -9,7 +9,7 @@
     <body>
         <h1>Blog Name</h1>
         <h2 class='title'>
-            <a href="/posts/{{ $post->id }}">{{ $ post->title }}</a>
+            {{--<a href="/posts/{{ $posts->id }}">{{ $posts->title }}</a>--}}
         </h2>
         <div class='posts'>
  
