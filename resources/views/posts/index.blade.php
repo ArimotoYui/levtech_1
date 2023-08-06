@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_','-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <title>Blog</title>
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('index') }}
+        </h2>
+    </x-slot>
+    
+    
+<!--<html lang="{{ str_replace('_','-', app()->getLocale()) }}">-->
+<!--    <head>-->
+<!--        <meta charset="utf-8">-->
+<!--        <title>Blog</title>-->
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    </head>
-    <body>
+<!--        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">-->
+<!--    </head>-->
+    <!--<body>-->
         <h1>Blog Name</h1>
        
         <div class='posts'>
@@ -43,5 +51,7 @@
         <div class="footer">
             <a href="/">戻る<a>
         </div>
-    </body>
+        ログインユーザー：{{ Auth::user()->name }}
+    <!--</body>-->
+    </x-app-layout>
 </html>
